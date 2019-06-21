@@ -34,10 +34,10 @@ const sumOfEvenFib = (maxValue: number): number => {
 // ---------------------------------------------------------------------------
 
 /**
- * This function calculates all fibonacci numbers up to the specified step, expressed as n.
+ * This function calculates all fibonacci numbers up to the specified maximum.
  *
- * @param {number} maxValue - Maximum fibonacci number to be calculated
- * @return {Array<number>} - List of fibonacci numbers up to specified value
+ * @param {number} maxValue - Largest fibonacci number to be calculated
+ * @return {Array<number>} - List of fibonacci numbers up to the specified maximum
  */
 
 const calculateFibSequence = (maxValue: number): Array<number> => {
