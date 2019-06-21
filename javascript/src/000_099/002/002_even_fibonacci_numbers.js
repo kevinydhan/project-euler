@@ -12,9 +12,18 @@
     1. Calculate an array of fibonacci numbers.
     2. call Array.prototype.reduce() to summate all even numbers.
 */
+Object.defineProperty(exports, "__esModule", { value: true });
 // ---------------------------------------------------------------------------
-var fib = function (max) {
-    if (max === void 0) { max = 4000000; }
-    // This object is used to store calculated
+var sumOfEvenFib = function () { return 1; };
+var fib = function (n) {
+    /*
+      This object is used to store calculated fibonacci numbers using the step number and fibonacci number as key-value pairs.
+      ex. { 0: 1, 1: 1, 2: 3 }
+    */
     var cache = {};
+    if (n < 2)
+        return 1;
+    if (cache[n])
+        return cache[n];
 };
+exports.default = sumOfEvenFib;

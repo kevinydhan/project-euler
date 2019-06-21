@@ -14,9 +14,17 @@
 
 // ---------------------------------------------------------------------------
 
-const fib = (max: number = 4000000) => {
-  // This object is used to store calculated
-  const cache = {}
+const sumOfEvenFib = () => {return 1}
 
+const fib = (n: number) => {
+  /*
+    This object is used to store calculated fibonacci numbers using the step number and fibonacci number as key-value pairs.
+    ex. { 0: 1, 1: 1, 2: 3 }
+  */
+  const cache: any = {}
 
+  if (n < 2) return 1
+  if (cache[n]) return cache[n]
 }
+
+export default sumOfEvenFib

@@ -8,6 +8,7 @@
     - a way to find all multiples of 3 and 5 below given number
     - optional: a sum function
 */
+Object.defineProperty(exports, "__esModule", { value: true });
 // ---------------------------------------------------------------------------
 /**
  * This function finds all multiples of 3 and 5 below a given number and returns the sum of the multiples.
@@ -15,7 +16,7 @@
  * @param {number} n - A given number
  * @return {number} - Sum of the multiples of 3 and 5 below the given number
  */
-var main = function (n) {
+var sumOfMultiplesOf3And5 = function (n) {
     var nums = findMultiples(n);
     return nums.reduce(function (total, n) { return total + n; }, 0);
 };
@@ -34,3 +35,4 @@ var findMultiples = function (n) {
             result.push(i);
     return result;
 };
+exports.default = sumOfMultiplesOf3And5;

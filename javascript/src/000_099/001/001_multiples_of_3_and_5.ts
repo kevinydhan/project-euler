@@ -17,7 +17,7 @@
  * @return {number} - Sum of the multiples of 3 and 5 below the given number
  */
 
-const main = (n: number) => {
+const sumOfMultiplesOf3And5 = (n: number) => {
   const nums: Array<number> = findMultiples(n)
   return nums.reduce((total, n) => total + n, 0)
 }
@@ -40,3 +40,5 @@ const findMultiples = (n: number) => {
 
   return result
 }
+
+export default sumOfMultiplesOf3And5
