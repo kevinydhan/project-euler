@@ -1,5 +1,6 @@
 /*
   Link: https://projecteuler.net/problem=1
+
   Problem 1: Multiples of 3 and 5
 
   My solution will need:
@@ -39,6 +40,3 @@ const findMultiples = (n: number) => {
 
   return result
 }
-
-// ---------------------------------------------------------------------------
-console.log(main(1000))
