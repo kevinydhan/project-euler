@@ -14,17 +14,51 @@
 
 // ---------------------------------------------------------------------------
 
-const sumOfEvenFib = () => {return 1}
+/**
+ * This function returns the sum of all even fibonacci numbers less than the maximum value passed.
+ *
+ * @param {number} maxValue - Largest fibonacci number to be calculated
+ * @return {number} - Sum of even fibonacci numbers up to value passed
+ */
 
-const fib = (n: number) => {
-  /*
-    This object is used to store calculated fibonacci numbers using the step number and fibonacci number as key-value pairs.
-    ex. { 0: 1, 1: 1, 2: 3 }
-  */
-  const cache: any = {}
+const sumOfEvenFib = (maxValue: number): number => {
+  const nums: Array<number> = calculateFibSequence(maxValue)
 
-  if (n < 2) return 1
-  if (cache[n]) return cache[n]
+  // Summate fibonacci numbers if it is even
+  return nums.reduce((total, n) => {
+    if (n % 2 === 0) total += n
+    return total
+  }, 0)
+}
+
+// ---------------------------------------------------------------------------
+
+/**
+ * This function calculates all fibonacci numbers up to the specified step, expressed as n.
+ *
+ * @param {number} maxValue - Maximum fibonacci number to be calculated
+ * @return {Array<number>} - List of fibonacci numbers up to specified value
+ */
+
+const calculateFibSequence = (maxValue: number): Array<number> => {
+  const nums: Array<number> = [] // Array of fibonacci numbers
+  const cache: any = {} // Key-value pairs of step to fibonacci number
+  let step: number = 0 // Current step in fibonacci sequence
+
+  // This function calculates fibonacci numbers.
+  const fib = (n: number): number => {
+    if (n < 2) return 1
+    else if (cache[n]) return cache[n]
+    return fib(n - 1) + fib(n - 2)
+  }
+
+  // While current fibonacci number is less than maxValue, add it to the nums array
+  while(fib(step) < maxValue) {
+    nums.push(fib(step))
+    step++
+  }
+
+  return nums
 }
 
 export default sumOfEvenFib

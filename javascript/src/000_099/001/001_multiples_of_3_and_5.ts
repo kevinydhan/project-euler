@@ -17,7 +17,7 @@
  * @return {number} - Sum of the multiples of 3 and 5 below the given number
  */
 
-const sumOfMultiplesOf3And5 = (n: number) => {
+const sumOfMultiplesOf3And5 = (n: number): number => {
   const nums: Array<number> = findMultiples(n)
   return nums.reduce((total, n) => total + n, 0)
 }
@@ -31,7 +31,7 @@ const sumOfMultiplesOf3And5 = (n: number) => {
  * @return {Array<number>} - List of multiples
  */
 
-const findMultiples = (n: number) => {
+const findMultiples = (n: number): Array<number> => {
   const result: Array<number> = []
 
   // Add current number to result array if it is divisible by 3 or 5.
