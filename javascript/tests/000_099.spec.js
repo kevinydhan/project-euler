@@ -55,11 +55,11 @@ describe('Problem 003: Largest Prime Factor', () => {
 const { largestPalindromeProduct } = solutions
 
 describe('Problem 004: Largest Palindrome Product', () => {
-  test('The largest palindrome made from the product of two 2-digit numbers is 9,009.', () => {
+  xtest('The largest palindrome made from the product of two 2-digit numbers is 9,009.', () => {
     expect(largestPalindromeProduct(2)).toBe(9009)
   })
 
-  test('The largest palindrome made from the product of two 3-digit numbers is 906,609.', () => {
+  xtest('The largest palindrome made from the product of two 3-digit numbers is 906,609.', () => {
     expect(largestPalindromeProduct(3)).toBe(906609)
   })
 })
