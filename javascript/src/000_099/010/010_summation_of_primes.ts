@@ -32,9 +32,10 @@ const summationOfPrimes = (max: number): number => {
   // This is here so I can do a for loop starting with 3 and incrementing by 2
   if (max > 2) result.push(2)
 
-  for (let i = 3; i < max; i += 2)
+  for (let i = 3; i < max; i += 2) {
     if (isPrime(i, composites)) result.push(i)
-
+    else composites[i] = true
+  }
   return result.reduce((total, n) => total + n)
 }
 
@@ -57,10 +58,7 @@ const isPrime = (n: number, composites: any = {}): boolean => {
   for (let i = 3; i * i <= n; i += 2) {
     if (composites[n]) return false
 
-    if (n % i === 0) {
-      composites[n] = true
-      return false
-    }
+    if (n % i === 0) return false
   }
 
   return true
