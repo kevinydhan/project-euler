@@ -27,7 +27,7 @@
  * @return {number} - Largest prime factor, returns -1 if n is negative
  */
 
-const largestPrimeFactor = (n: number) => {
+const largestPrimeFactor = (n: number): number => {
   if (n < 0) return -1 // Return -1 if n is negative
   if (n === 1) return 1 // Return 1 if n is 1
 

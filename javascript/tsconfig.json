@@ -4,7 +4,7 @@
     "module": "commonjs",
     "declaration": true,
     "strict": true,
-    "lib": ["es2016"]
+    "lib": ["dom", "es2016"]
   },
   "include": ["src"],
   "exclude": ["node_modules"]

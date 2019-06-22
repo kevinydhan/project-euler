@@ -28,23 +28,23 @@ describe('Problem 002: Even Fibonacci Numbers', () => {
 const { largestPrimeFactor } = solutions
 
 describe('Problem 003: Largest Prime Factor', () => {
-  test('The largest prime factor of 5 is 5.', () => {
+  xtest('The largest prime factor of 5 is 5.', () => {
     expect(largestPrimeFactor(5)).toBe(5)
   })
 
-  test('The largest prime factor of 14 is 7.', () => {
+  xtest('The largest prime factor of 14 is 7.', () => {
     expect(largestPrimeFactor(14)).toBe(7)
   })
 
-  test('The largest prime factor of 25 is 5.', () => {
+  xtest('The largest prime factor of 25 is 5.', () => {
     expect(largestPrimeFactor(25)).toBe(5)
   })
 
-  test('The largest prime factor of 13,195 is 29.', () => {
+  xtest('The largest prime factor of 13,195 is 29.', () => {
     expect(largestPrimeFactor(13195)).toBe(29)
   })
 
-  test('The largest prime factor of 600,851,475,143 is 6,857.', () => {
+  xtest('The largest prime factor of 600,851,475,143 is 6,857.', () => {
     expect(largestPrimeFactor(600851475143)).toBe(6857)
   })
 })
@@ -55,11 +55,11 @@ describe('Problem 003: Largest Prime Factor', () => {
 const { largestPalindromeProduct } = solutions
 
 describe('Problem 004: Largest Palindrome Product', () => {
-  xtest('The largest palindrome made from the product of two 2-digit numbers is 9,009.', () => {
+  test('The largest palindrome made from the product of two 2-digit numbers is 9,009.', () => {
     expect(largestPalindromeProduct(2)).toBe(9009)
   })
 
-  xtest('The largest palindrome made from the product of two 3-digit numbers is 906,609.', () => {
+  test('The largest palindrome made from the product of two 3-digit numbers is 906,609.', () => {
     expect(largestPalindromeProduct(3)).toBe(906609)
   })
 })
