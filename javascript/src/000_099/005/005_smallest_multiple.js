@@ -13,5 +13,6 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 // ---------------------------------------------------------------------------
 const smallestMultiple = (min, max) => {
+    return 1;
 };
 exports.default = smallestMultiple;

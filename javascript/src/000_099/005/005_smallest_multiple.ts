@@ -13,6 +13,7 @@
 // ---------------------------------------------------------------------------
 
 const smallestMultiple = (min: number, max: number): number => {
+  return 1
 }
 
 export default smallestMultiple
