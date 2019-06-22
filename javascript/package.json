@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "docs": "./node_modules/.bin/jsdoc -c ./jsdoc.config.json",
-    "test": "jest",
+    "test": "./node_modules/.bin/jest --watch",
     "typescript": "./node_modules/typescript/bin/tsc -w"
   },
   "keywords": [],

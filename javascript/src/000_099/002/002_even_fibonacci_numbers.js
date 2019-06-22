@@ -20,10 +20,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
  * @param {number} maxValue - Largest fibonacci number to be calculated
  * @return {number} - Sum of even fibonacci numbers up to value passed
  */
-var sumOfEvenFib = function (maxValue) {
-    var nums = calculateFibSequence(maxValue);
+const sumOfEvenFib = (maxValue) => {
+    const nums = calculateFibSequence(maxValue);
     // Summate fibonacci numbers if it is even
-    return nums.reduce(function (total, n) {
+    return nums.reduce((total, n) => {
         if (n % 2 === 0)
             total += n;
         return total;
@@ -36,12 +36,12 @@ var sumOfEvenFib = function (maxValue) {
  * @param {number} maxValue - Largest fibonacci number to be calculated
  * @return {Array<number>} - List of fibonacci numbers up to the specified maximum
  */
-var calculateFibSequence = function (maxValue) {
-    var nums = []; // Array of fibonacci numbers
-    var cache = {}; // Key-value pairs of step to fibonacci number
-    var step = 0; // Current step in fibonacci sequence
+const calculateFibSequence = (maxValue) => {
+    const nums = []; // Array of fibonacci numbers
+    const cache = {}; // Key-value pairs of step to fibonacci number
+    let step = 0; // Current step in fibonacci sequence
     // This function calculates fibonacci numbers.
-    var fib = function (n) {
+    const fib = (n) => {
         if (n < 2)
             return 1;
         else if (cache[n])

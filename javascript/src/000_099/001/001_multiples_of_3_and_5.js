@@ -16,9 +16,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
  * @param {number} n - A given number
  * @return {number} - Sum of the multiples of 3 and 5 below the given number
  */
-var sumOfMultiplesOf3And5 = function (n) {
-    var nums = findMultiples(n);
-    return nums.reduce(function (total, n) { return total + n; }, 0);
+const sumOfMultiplesOf3And5 = (n) => {
+    const nums = findMultiples(n);
+    return nums.reduce((total, n) => total + n, 0);
 };
 // ---------------------------------------------------------------------------
 /**
@@ -27,10 +27,10 @@ var sumOfMultiplesOf3And5 = function (n) {
  * @param {number} n - Specified number
  * @return {Array<number>} - List of multiples
  */
-var findMultiples = function (n) {
-    var result = [];
+const findMultiples = (n) => {
+    const result = [];
     // Add current number to result array if it is divisible by 3 or 5.
-    for (var i = 0; i < n; ++i)
+    for (let i = 0; i < n; ++i)
         if (i % 3 === 0 || i % 5 === 0)
             result.push(i);
     return result;
