@@ -27,8 +27,9 @@ const summationOfPrimes = (max: number): number => {
 
   const result: Array<number> = [] // Array of prime numbers
 
-  const composites: any = {}
+  const composites: any = {} // A map of composite numbers
 
+  // This is here so I can do a for loop starting with 3 and incrementing by 2
   if (max > 2) result.push(2)
 
   for (let i = 3; i < max; i += 2)
