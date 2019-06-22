@@ -8,5 +8,15 @@ module.exports = {
   largestPalindromeProduct: require('./004/004_largest_palindrome_product')
     .default,
 
-  smallestMultiple: require('./005/005_smallest_multiple').default
+  smallestMultiple: require('./005/005_smallest_multiple').default,
+
+  // 006
+
+  // 007
+
+  // 008
+
+  // 009
+
+  summationOfPrimes: require('./010/010_summation_of_primes').default
 }

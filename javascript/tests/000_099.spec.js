@@ -70,7 +70,22 @@ describe('Problem 004: Largest Palindrome Product', () => {
 const { smallestMultiple } = solutions
 
 describe('Problem 005: Smallest Multiple', () => {
-  test('The smallest positive number evenly divisible by all of the numbers from 1 to 20 is 232,792,560.', () => {
+  xtest('The smallest positive number evenly divisible by all of the numbers from 1 to 20 is 232,792,560.', () => {
     expect(smallestMultiple(1, 20)).toBe(232792560)
+  })
+})
+
+// ---------------------------------------------------------------------------
+// Problem 010: Summation of Primes
+
+const { summationOfPrimes } = solutions
+
+describe('Problem 010: Summation of Primes', () => {
+  test('The sum of all of the primes below 10 is 17.', () => {
+    expect(summationOfPrimes(10)).toBe(17)
+  })
+
+  xtest('The sum of all the primes below 2,000,000 is 142,913,828,922.', () => {
+    expect(summationOfPrimes(2000000)).toBe(142913828922)
   })
 })
