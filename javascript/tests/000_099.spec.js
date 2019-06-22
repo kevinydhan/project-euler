@@ -85,7 +85,7 @@ describe('Problem 010: Summation of Primes', () => {
     expect(summationOfPrimes(10)).toBe(17)
   })
 
-  xtest('The sum of all the primes below 2,000,000 is 142,913,828,922.', () => {
+  test('The sum of all the primes below 2,000,000 is 142,913,828,922.', () => {
     expect(summationOfPrimes(2000000)).toBe(142913828922)
   })
 })
