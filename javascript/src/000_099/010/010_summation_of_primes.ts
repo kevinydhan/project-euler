@@ -55,11 +55,8 @@ const isPrime = (n: number, composites: any = {}): boolean => {
 
   if (n % 2 === 0) return false
 
-  for (let i = 3; i * i <= n; i += 2) {
-    if (composites[n]) return false
-
-    if (n % i === 0) return false
-  }
+  for (let i = 3; i * i <= n; i += 2)
+    if (composites[n] || n % i === 0) return false
 
   return true
 }
