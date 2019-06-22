@@ -63,3 +63,14 @@ describe('Problem 004: Largest Palindrome Product', () => {
     expect(largestPalindromeProduct(3)).toBe(906609)
   })
 })
+
+// ---------------------------------------------------------------------------
+// Problem 005: Smallest Multiple
+
+const { smallestMultiple } = solutions
+
+describe('Problem 005: Smallest Multiple', () => {
+  test('The smallest positive number evenly divisible by all of the numbers from 1 to 20 is 232,792,560.', () => {
+    expect(smallestMultiple(1, 20)).toBe(232792560)
+  })
+})
