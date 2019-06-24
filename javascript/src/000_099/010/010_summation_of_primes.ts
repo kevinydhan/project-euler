@@ -1,6 +1,4 @@
 /*
-  Link: https://projecteuler.net/problem=10
-
   Problem 10: Summation of Primes
 
   My solution will need:
@@ -20,6 +18,8 @@
  *
  * @param {number} max - Upper bound
  * @return - Sum of all prime numbers, returns -1 if `max` is negative or 1
+ *
+ * @see - https://projecteuler.net/problem=10
  */
 
 const summationOfPrimes = (max: number): number => {

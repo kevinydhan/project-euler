@@ -1,6 +1,4 @@
 /*
-  Link: https://projecteuler.net/problem=3
-
   Problem 3: Largest Prime Factor
 
   My solution will need:
@@ -21,10 +19,12 @@
 // ---------------------------------------------------------------------------
 
 /**
- * This function finds the largest prime factor for a given number.
+ * Finds the largest prime factor for a given number.
  *
  * @param {number} n - Given number
- * @return {number} - Largest prime factor, returns -1 if n is negative
+ * @return {number} - Largest prime factor, returns -1 if `n` is negative
+ *
+ * @see - https://projecteuler.net/problem=3
  */
 
 const largestPrimeFactor = (n: number): number => {

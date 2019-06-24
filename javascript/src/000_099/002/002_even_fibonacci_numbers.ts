@@ -1,6 +1,4 @@
 /*
-  Link: https://projecteuler.net/problem=2
-
   Problem 2: Even Fibonacci Numbers
 
   My solution will need:
@@ -15,10 +13,12 @@
 // ---------------------------------------------------------------------------
 
 /**
- * This function returns the sum of all even fibonacci numbers less than the maximum value passed.
+ * Returns the sum of all even fibonacci numbers less than the specified maximum value.
  *
  * @param {number} maxValue - Largest fibonacci number to be calculated
- * @return {number} - Sum of even fibonacci numbers up to value passed
+ * @return {number} - Sum of even fibonacci numbers
+ *
+ * @see - https://projecteuler.net/problem=2
  */
 
 const sumOfEvenFib = (maxValue: number): number => {
@@ -34,7 +34,7 @@ const sumOfEvenFib = (maxValue: number): number => {
 // ---------------------------------------------------------------------------
 
 /**
- * This function calculates all fibonacci numbers up to the specified maximum.
+ * Calculates all fibonacci numbers up to the specified maximum.
  *
  * @param {number} maxValue - Largest fibonacci number to be calculated
  * @return {Array<number>} - List of fibonacci numbers up to the specified maximum

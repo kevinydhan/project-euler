@@ -1,7 +1,5 @@
 "use strict";
 /*
-  Link: https://projecteuler.net/problem=4
-
   Problem 4: Largest Palindrome Product
 
   My solution will need:
@@ -19,10 +17,12 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 // ---------------------------------------------------------------------------
 /**
- * This function finds the largest palindrome made from the product of two numbers of given digits.
+ * Finds the largest palindrome made from the product of two numbers of given digits.
  *
  * @param {number} digit - Number of digits
  * @return {number} - Largest palindrome product, return 0 if no palindrome found
+ *
+ * @see - https://projecteuler.net/problem=4
  */
 const largestPalindromeProduct = (digit) => {
     const highest = { 2: 99, 3: 999 };
@@ -40,7 +40,7 @@ const largestPalindromeProduct = (digit) => {
 };
 // ---------------------------------------------------------------------------
 /**
- * This function checks if a number is a palindrome.
+ * Checks if a number is a palindrome.
  *
  * @param {number} n - Number to be checked
  * @return {boolean} - If true, number is a palindrome
