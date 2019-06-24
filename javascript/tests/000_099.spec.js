@@ -91,6 +91,18 @@ describe('Problem 006: Sum Square Difference', () => {
 })
 
 // ---------------------------------------------------------------------------
+// Problem 007: 10,001st Prime
+
+const { getPrime } = solutions
+
+describe('Problem 007: 10,000st Prime', () => {
+  test('The 6th prime number is 13.', () => expect(getPrime(6)).toBe(13))
+
+  test('The 10,001st prime number is 104,743.', () =>
+    expect(getPrime(10001)).toBe(104743))
+})
+
+// ---------------------------------------------------------------------------
 // Problem 010: Summation of Primes
 
 const { summationOfPrimes } = solutions

@@ -12,7 +12,7 @@ module.exports = {
 
   sumSquareDifference: require('./006/006_sum_square_difference').default,
 
-  // 007
+  getPrime: require('./007/007_get_prime').default,
 
   // 008
 
