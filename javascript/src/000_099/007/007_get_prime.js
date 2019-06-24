@@ -25,10 +25,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const getPrime = (position) => {
     let found = 1; // Counted 2 as the first prime found
     const isPrime = (n) => {
-        if (n === 2 || n === 3)
+        if (n === 3)
             return true;
-        if (n % 2 === 0)
-            return false;
         for (let i = 3; i * i <= n; i += 2)
             if (n % i === 0)
                 return false;
