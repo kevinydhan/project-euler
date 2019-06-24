@@ -1,10 +1,10 @@
 /**
- * Calculates the difference between the sum of the squares for `1...n` and the square of the sum for `1...n`.
+ * Calculates a sequence of prime numbers and returns the prime number at given position.
  *
- * @param {number} n - Upper limit
- * @return {number} - Difference between sum of squares and square of sum
+ * @param {number} position - Position in sequence
+ * @return {number} - Prime number at given position
  *
- * @see - https://projecteuler.net/problem=6
+ * @see - https://projecteuler.net/problem=7
  */
 declare const getPrime: (position: number) => number;
 export default getPrime;

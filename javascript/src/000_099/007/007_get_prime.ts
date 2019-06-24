@@ -2,25 +2,47 @@
   Problem 7: 10,001st Prime
 
   My solution will need:
-    -
+    - some way to find out the sequence of prime numbers from 1..n
+    - to be efficient in the way it generates the prime numbers
 
   The steps I am thinking about taking are:
-    1.
+    1. I need some loop to keep running so I can check numbers to see if they are prime or not.
+      - a while loop or
+      - for loop with a condition that checks if I have the 10,001st prime
+    2. Write a function to check if a number is prime?
 */
 
 // ---------------------------------------------------------------------------
 
 /**
- * Calculates the difference between the sum of the squares for `1...n` and the square of the sum for `1...n`.
+ * Calculates a sequence of prime numbers and returns the prime number at given position.
  *
- * @param {number} n - Upper limit
- * @return {number} - Difference between sum of squares and square of sum
+ * @param {number} position - Position in sequence
+ * @return {number} - Prime number at given position
  *
- * @see - https://projecteuler.net/problem=6
+ * @see - https://projecteuler.net/problem=7
  */
 
- const getPrime = (position: number): number => {
-   return 1
- }
+const getPrime = (position: number): number => {
+  let found = 1 // Counted 2 as the first prime found
 
- export default getPrime
+  const isPrime = (n: number): boolean => {
+    if (n === 2 || n === 3) return true
+
+    if (n % 2 === 0) return false
+
+    for (let i = 3; i * i <= n; i += 2)
+      if (n % i === 0) return false
+
+    return true
+  }
+
+  for (let i = 3; found <= position; i += 2) {
+    if (isPrime(i)) found++
+    if (found === position) return i
+  }
+
+  return -1
+}
+
+export default getPrime
