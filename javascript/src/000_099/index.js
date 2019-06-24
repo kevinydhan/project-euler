@@ -14,7 +14,8 @@ module.exports = {
 
   getPrime: require('./007/007_get_prime').default,
 
-  // 008
+  largestProductInSeries: require('./008/008_largest_product_in_series')
+    .default,
 
   // 009
 
