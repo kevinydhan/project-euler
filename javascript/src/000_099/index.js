@@ -10,7 +10,7 @@ module.exports = {
 
   smallestMultiple: require('./005/005_smallest_multiple').default,
 
-  // 006
+  sumSquareDifference: require('./006/006_sum_square_difference').default,
 
   // 007
 
