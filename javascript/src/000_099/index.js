@@ -17,7 +17,8 @@ module.exports = {
   largestProductInSeries: require('./008/008_largest_product_in_series')
     .default,
 
-  // 009
+  specialPythagoreanTriplet: require('./009/009_special_pythagorean_triplet')
+    .default,
 
   summationOfPrimes: require('./010/010_summation_of_primes').default
 }

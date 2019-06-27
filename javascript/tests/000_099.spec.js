@@ -129,7 +129,7 @@ describe('Problem 008: Largest Product in a Series', () => {
   05886116467109405077541002256983155200055935729725
   71636269561882670428252483600823257530420752963450`
 
-  test('The largest product of any 3 adjacent digits in the series `1234567890` is 504.', () => {
+  xtest('The largest product of any 3 adjacent digits in the series `1234567890` is 504.', () => {
     expect(largestProductInSeries('1234567890', 3)).toBe(504)
   })
 
@@ -137,8 +137,23 @@ describe('Problem 008: Largest Product in a Series', () => {
     expect(largestProductInSeries(series, 4)).toBe(5832)
   })
 
-  test('The largest product of any 13 adjacent digits in the given series is 5,537,376,230.', () => {
+  xtest('The largest product of any 13 adjacent digits in the given series is 5,537,376,230.', () => {
     expect(largestProductInSeries(series, 13)).toBe(5537376230)
+  })
+})
+
+// ---------------------------------------------------------------------------
+// Problem 009: Special Pythagorean Triplet
+
+const { specialPythagoreanTriplet } = solutions
+
+describe('Problem 009: Special Pythagorean Triplet', () => {
+  xtest('The product of a, b, and c where a + b + c = 12 is 60.', () => {
+    expect(specialPythagoreanTriplet(12)).toBe(60)
+  })
+
+  test('The product of a, b, and c where a + b + c = 1,000 is 31,875,000.', () => {
+    expect(specialPythagoreanTriplet(1000)).toBe(31875000)
   })
 })
 
